@@ -1,16 +1,19 @@
 * {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 .header {
     display: flex;
+    background-color: #1F2937;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.empty {
-    flex: auto;
-}
+
 .logo {
     width: 50px;
+    border: 1px solid #F9FAF8;
 }
 img {
     width: 100%;
@@ -20,26 +23,52 @@ img {
 ul {
     display: flex;
     list-style-type: none;
-    padding: 0;
+    padding: 14px;
     gap: 10px;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .one {
     display: flex;
+    background-color: #1F2937;
+    justify-content: space-evenly;
 }
 
 .one-left {
     display: flex;
     flex-direction: column;
+    max-width: 400px;
+}
+
+.one-left-header {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.one-left-text {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .one-right {
-    width: 500px;
+    width: auto;
+    padding: 20px;
+    max-width: 400px;
+}
+
+button {
+    background-color: #3882f6;
+    border-radius: 12px;
+    border: none;
+    color: #F9FAF8;
+    padding: 6px;
+    margin: 8px;
 }
 
 .two {
@@ -47,9 +76,16 @@ a {
     justify-content: center;
 }
 
+.two-up {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
 .two-down {
     display: flex;
     text-align: center;
+    gap: 8px;
 }
 
 .container {
@@ -62,29 +98,54 @@ a {
     width: 100px;
     height: 100px;
     border: 2px solid violet;
+    border-radius: 8px;
+}
+
+.texty {
+    font-size: 12px;
+    font-weight: 300;
 }
 
 .three {
     display: flex;
     flex-direction: column;
+    background-color: #E5E7EB;
 }
 
 .three-up {
     text-align: left;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
 }
 
 .three-down {
     text-align: right;
+    font-weight: bold;
 }
 
 .four {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    background-color: #3882f6;
+    margin: 20px;
+    border-radius: 12px;
+    color: #F9FAF8
+}
+
+.four-up {
+    font-weight: bold;
+}
+
+.four-down {
+    font-weight: lighter;
 }
 
 .footer {
     text-align: center;
+    background-color: #1F2937;
 }
 
 .header,.one,.two,.three,.four,.footer {
